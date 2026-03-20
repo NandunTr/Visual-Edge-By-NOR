@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Visual Edge by NOR — Premium photography, videography, content creation, graphic design, and event coverage by Nandun Teeksjana Ratnayake.">
+  <meta name="keywords"
+    content="photography, videography, graphic design, content creation, wedding photography, event coverage, Visual Edge, NOR">
+  <meta name="author" content="Nandun Teeksjana Ratnayake">
+  <title>Visual Edge by NOR | Photography & Creative Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Grain Overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <!-- Camera Aperture -->
+    <div class="loader-aperture">
+      <div class="aperture-blade" style="--i:0"></div>
+      <div class="aperture-blade" style="--i:1"></div>
+      <div class="aperture-blade" style="--i:2"></div>
+      <div class="aperture-blade" style="--i:3"></div>
+      <div class="aperture-blade" style="--i:4"></div>
+      <div class="aperture-blade" style="--i:5"></div>
+    </div>
+    <!-- Focus Ring -->
+    <div class="loader-focus-ring"></div>
+    <div class="loader-focus-ring ring-2"></div>
+    <!-- Shutter Flash -->
+    <div class="loader-flash" id="loaderFlash"></div>
+    <!-- Brand Text -->
+    <div class="loader-brand">
+      <div class="loader-logo">Visual Edge <span>by NOR</span></div>
+      <div class="loader-tagline">Capturing Moments</div>
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
+      </div>
+    </div>
+    <!-- Film Strip Decoration -->
+    <div class="loader-film-strip top"></div>
+    <div class="loader-film-strip bottom"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-brand">Visual Edge <span>by NOR</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#works">Works</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Creative Studio</p>
+      <h1 class="hero-title"><span class="gold">Visual</span> Edge</h1>
+      <p class="hero-subtitle">Premium photography, videography & creative content that captures the extraordinary in
+        every moment.</p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary">Explore Our Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section class="section" id="about">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Who We Are</p>
+      <h2 class="section-title">Crafting <span class="gold">Visual Stories</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrapper reveal-left">
+        <img src="assets/photography/thumbs/DSC06679-Enhanced-NR.jpg" alt="Visual Edge by NOR - Creative Studio"
+          class="about-image" loading="lazy">
+      </div>
+      <div class="about-text reveal-right">
+        <h3>We are <span class="gold">Visual Edge</span> by NOR</h3>
+        <p>Founded by Nandun Teekshana Ratnayake, Visual Edge by NOR is a creative studio dedicated to capturing life's
+          most precious moments with an artistic eye and cinematic precision.</p>
+        <p>From intimate wedding ceremonies to grand corporate events, from stunning product photography to eye-catching
+          graphic designs — we bring your vision to life with passion and professionalism.</p>
+        <p>Every frame we capture and every design we create tells a unique story, blending modern aesthetics with
+          timeless elegance.</p>
+        <div class="about-stats stagger">
+          <div class="stat reveal" style="--i:0">
+            <div class="stat-number" data-target="200">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat reveal" style="--i:1">
+            <div class="stat-number" data-target="150">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat reveal" style="--i:2">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MARQUEE ═══════════════════ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">Photography <span class="dot"></span></div>
+      <div class="marquee-item">Videography <span class="dot"></span></div>
+      <div class="marquee-item">Content Creation <span class="dot"></span></div>
+      <div class="marquee-item">Graphic Design <span class="dot"></span></div>
+      <div class="marquee-item">Video Editing <span class="dot"></span></div>
+      <div class="marquee-item">Events <span class="dot"></span></div>
+      <div class="marquee-item">Weddings <span class="dot"></span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item">Photography <span class="dot"></span></div>
+      <div class="marquee-item">Videography <span class="dot"></span></div>
+      <div class="marquee-item">Content Creation <span class="dot"></span></div>
+      <div class="marquee-item">Graphic Design <span class="dot"></span></div>
+      <div class="marquee-item">Video Editing <span class="dot"></span></div>
+      <div class="marquee-item">Events <span class="dot"></span></div>
+      <div class="marquee-item">Weddings <span class="dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ SERVICES ═══════════════════ -->
+  <section class="section services-section" id="services">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">What We Do</p>
+      <h2 class="section-title">Our <span class="gold">Services</span></h2>
+      <p class="section-desc">We offer a comprehensive range of creative services to bring your vision to life.</p>
+    </div>
+    <div class="services-grid stagger">
+      <div class="service-card reveal" style="--i:0">
+        <div class="service-icon">📸</div>
+        <h3>Photography</h3>
+        <p>Professional photo shoots from portraits and products to events and editorial. Every shot composed with
+          precision and artistic intent.</p>
+      </div>
+      <div class="service-card reveal" style="--i:1">
+        <div class="service-icon">🎬</div>
+        <h3>Videography</h3>
+        <p>Cinematic video production that tells your story. From concept to final cut, we craft engaging visual
+          narratives that resonate.</p>
+      </div>
+      <div class="service-card reveal" style="--i:2">
+        <div class="service-icon">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>Eye-catching designs for print and digital. Posters, banners, social media content, and brand materials that
+          make an impact.</p>
+      </div>
+      <div class="service-card reveal" style="--i:3">
+        <div class="service-icon">✏️</div>
+        <h3>Logo Design</h3>
+        <p>Unique brand identities that capture your essence. Custom logos and visual branding that set you apart from
+          the competition.</p>
+      </div>
+      <div class="service-card reveal" style="--i:4">
+        <div class="service-icon">💍</div>
+        <h3>Wedding Coverage</h3>
+        <p>Complete wedding photo and video packages. We capture every emotion, every detail, every precious moment of
+          your special day.</p>
+      </div>
+      <div class="service-card reveal" style="--i:5">
+        <div class="service-icon">🎯</div>
+        <h3>Content Creation</h3>
+        <p>Strategic content for social media and marketing. We help brands build their digital presence with compelling
+          visual storytelling.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ WORKS ═══════════════════ -->
+  <section class="section" id="works">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Our Portfolio</p>
+      <h2 class="section-title">Selected <span class="gold">Works</span></h2>
+      <p class="section-desc">A curated selection of our finest projects across photography, design, and video.</p>
+    </div>
+
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="photography">Photography</button>
+      <button class="filter-btn" data-filter="designs">Graphic Designs</button>
+      <button class="filter-btn" data-filter="logos">Logo Designs</button>
+      <button class="filter-btn" data-filter="videography">Videography</button>
+      <button class="filter-btn" data-filter="weddings">Weddings</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- ── Photography ── -->
+      <div class="gallery-item wide" data-category="photography" data-src="assets/photography/DSC06679-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06679-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Portrait Session</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03175.jpg">
+        <img src="assets/photography/thumbs/DSC03175.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Studio Shoot</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06687-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06687-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Creative Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item tall" data-category="photography" data-src="assets/photography/DSC06562.jpg">
+        <img src="assets/photography/thumbs/DSC06562.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Outdoor Session</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03427.jpg">
+        <img src="assets/photography/thumbs/DSC03427.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Editorial</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06527.jpg">
+        <img src="assets/photography/thumbs/DSC06527.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06462.jpg">
+        <img src="assets/photography/thumbs/DSC06462.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Lifestyle</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03148.jpg">
+        <img src="assets/photography/thumbs/DSC03148.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Studio Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item wide" data-category="photography"
+        data-src="assets/photography/DSC06077-Enhanced-NR-1.jpg">
+        <img src="assets/photography/thumbs/DSC06077-Enhanced-NR-1.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Landscape</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03143.jpg">
+        <img src="assets/photography/thumbs/DSC03143.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Professional</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03155.jpg">
+        <img src="assets/photography/thumbs/DSC03155.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Portrait Work</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06429-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06429-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Enhanced Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC08542-Enhanced-NR-1.jpg">
+        <img src="assets/photography/thumbs/DSC08542-Enhanced-NR-1.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Creative Shoot</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06546.jpg">
+        <img src="assets/photography/thumbs/DSC06546.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Natural Light</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06099-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06099-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Photography</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06423-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06423-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Enhanced Shot</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06432-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC06432-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Studio Work</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03106.jpg">
+        <img src="assets/photography/thumbs/DSC03106.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Professional Shot</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03156-Enhanced-NR.jpg">
+        <img src="assets/photography/thumbs/DSC03156-Enhanced-NR.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Enhanced Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC03157.jpg">
+        <img src="assets/photography/thumbs/DSC03157.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Studio Session</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/0.jpg">
+        <img src="assets/photography/thumbs/0.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Photography</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/01.jpg">
+        <img src="assets/photography/thumbs/01.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Capture</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/1.jpg">
+        <img src="assets/photography/thumbs/1.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Moment</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/2.jpg">
+        <img src="assets/photography/thumbs/2.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Composition</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/3.jpg">
+        <img src="assets/photography/thumbs/3.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Frame</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/4.jpg">
+        <img src="assets/photography/thumbs/4.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Vision</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/5.jpg">
+        <img src="assets/photography/thumbs/5.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Art</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC_5867_1.jpg">
+        <img src="assets/photography/thumbs/DSC_5867_1.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Outdoor</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC_8552.jpg">
+        <img src="assets/photography/thumbs/DSC_8552.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Candid</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC_8763.jpg">
+        <img src="assets/photography/thumbs/DSC_8763.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Portrait</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC_8837.jpg">
+        <img src="assets/photography/thumbs/DSC_8837.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Event</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC_8848.jpg">
+        <img src="assets/photography/thumbs/DSC_8848.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Moment</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC09775 (1).jpg">
+        <img src="assets/photography/thumbs/DSC09775 (1).jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Professional</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/G0048351_1727501081861.jpg">
+        <img src="assets/photography/thumbs/G0048351_1727501081861.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Action</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_4785.jpg">
+        <img src="assets/photography/thumbs/IMG_4785.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Capture</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_4786.jpg">
+        <img src="assets/photography/thumbs/IMG_4786.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Scene</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_4798.jpg">
+        <img src="assets/photography/thumbs/IMG_4798.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Frame</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_5577.jpg">
+        <img src="assets/photography/thumbs/IMG_5577.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Detail</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_5578.jpg">
+        <img src="assets/photography/thumbs/IMG_5578.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Perspective</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_5850.jpg">
+        <img src="assets/photography/thumbs/IMG_5850.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Nature</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/IMG_5875.jpg">
+        <img src="assets/photography/thumbs/IMG_5875.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Life</h4><span>Photography</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="photography" data-src="assets/photography/DSC06423-Enhanced-NR-1.jpg">
+        <img src="assets/photography/thumbs/DSC06423-Enhanced-NR-1.jpg" alt="Photography Work" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Focus</h4><span>Photography</span>
+        </div>
+      </div>
+
+      <!-- ── Graphic Designs ── -->
+      <div class="gallery-item wide" data-category="designs" data-src="assets/designs/Backdrop.jpg">
+        <img src="assets/designs/thumbs/Backdrop.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Event Backdrop</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Banner.jpg">
+        <img src="assets/designs/thumbs/Banner.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Banner Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Banner01.jpg">
+        <img src="assets/designs/thumbs/Banner01.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Promotional Banner</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Gecko Glide.jpg">
+        <img src="assets/designs/thumbs/Gecko Glide.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Gecko Glide</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Pongal.jpg">
+        <img src="assets/designs/thumbs/Pongal.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Pongal Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Aurudu.jpg">
+        <img src="assets/designs/thumbs/Aurudu.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Aurudu Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Stingrays 2.jpg">
+        <img src="assets/designs/thumbs/Stingrays 2.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Stingrays</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Graduation.jpg">
+        <img src="assets/designs/thumbs/Graduation.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Graduation</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Birthday.jpg">
+        <img src="assets/designs/thumbs/Birthday.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Birthday Card</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/frunt.jpg">
+        <img src="assets/designs/thumbs/frunt.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Front Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/banner (2).jpg">
+        <img src="assets/designs/thumbs/banner (2).jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Banner</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Poster.jpg">
+        <img src="assets/designs/thumbs/Poster.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Poster</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Event 2.jpg">
+        <img src="assets/designs/thumbs/Event 2.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Event Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Ganga HBD.jpg">
+        <img src="assets/designs/thumbs/Ganga HBD.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Birthday Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Artboard 1.jpg">
+        <img src="assets/designs/thumbs/Artboard 1.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Artboard Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Artboard 2.jpg">
+        <img src="assets/designs/thumbs/Artboard 2.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Creative Board</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Artboard 4.jpg">
+        <img src="assets/designs/thumbs/Artboard 4.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Layout Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/CV.jpg">
+        <img src="assets/designs/thumbs/CV.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>CV Design</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Dance sessions.jpg">
+        <img src="assets/designs/thumbs/Dance sessions.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Dance Sessions</h4><span>Graphic Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="designs" data-src="assets/designs/Isalanwide.jpg">
+        <img src="assets/designs/thumbs/Isalanwide.jpg" alt="Graphic Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Isalanwide</h4><span>Graphic Design</span>
+        </div>
+      </div>
+
+      <!-- ── Logo Designs ── -->
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/2.jpg">
+        <img src="assets/logos/thumbs/2.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Brand Logo</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/Logo1.jpg">
+        <img src="assets/logos/thumbs/Logo1.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Logo Design</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/Logo2.jpg">
+        <img src="assets/logos/thumbs/Logo2.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Logo Concept</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/L1.jpg">
+        <img src="assets/logos/thumbs/L1.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Brand Identity</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/L2.jpg">
+        <img src="assets/logos/thumbs/L2.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Logo Mark</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/L3.jpg">
+        <img src="assets/logos/thumbs/L3.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Typography Logo</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/Logow.jpg">
+        <img src="assets/logos/thumbs/Logow.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Wordmark</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/89.jpg">
+        <img src="assets/logos/thumbs/89.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Icon Design</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/meddle 1.jpg">
+        <img src="assets/logos/thumbs/meddle 1.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Logo Layout</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/pixel1.jpg">
+        <img src="assets/logos/thumbs/pixel1.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Pixel Logo</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/pixel3.jpg">
+        <img src="assets/logos/thumbs/pixel3.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Pixel Design</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item wide" data-category="logos" data-src="assets/logos/pixel2.jpg">
+        <img src="assets/logos/thumbs/pixel2.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Pixel Variant</h4><span>Logo Design</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="logos" data-src="assets/logos/pixel4.jpg">
+        <img src="assets/logos/thumbs/pixel4.jpg" alt="Logo Design" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Pixel Art Logo</h4><span>Logo Design</span>
+        </div>
+      </div>
+
+      <!-- ── Videography ── -->
+      <div class="gallery-item video-item" data-category="videography" data-src="Works/Videos/V 01-1.mp4"
+        data-type="video">
+        <img src="assets/videography/V 01-1_poster.jpg" alt="Videography" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Video Production</h4><span>Videography</span>
+        </div>
+      </div>
+      <div class="gallery-item video-item wide" data-category="videography" data-src="Works/Videos/V 02-1.mp4"
+        data-type="video">
+        <img src="assets/videography/V 02-1_poster.jpg" alt="Videography" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Cinematic Reel</h4><span>Videography</span>
+        </div>
+      </div>
+      <div class="gallery-item video-item" data-category="videography" data-src="Works/Videos/V 03.mp4"
+        data-type="video">
+        <img src="assets/videography/V 03_poster.jpg" alt="Videography" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Visual Story</h4><span>Videography</span>
+        </div>
+      </div>
+
+      <!-- ── Weddings ── -->
+      <div class="gallery-item video-item wide" data-category="weddings"
+        data-src="Works/Wedding videos/Wedding video Grand Kandian.mp4" data-type="video">
+        <img src="assets/weddings/Wedding video Grand Kandian_poster.jpg" alt="Wedding Video" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Grand Kandyan Wedding</h4><span>Wedding Coverage</span>
+        </div>
+      </div>
+      <div class="gallery-item video-item wide" data-category="weddings" data-src="Works/Wedding videos/V L.mp4"
+        data-type="video">
+        <img src="assets/weddings/V L_poster.jpg" alt="Wedding Video" loading="lazy">
+        <div class="gallery-overlay">
+          <h4>Wedding Film</h4><span>Wedding Coverage</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section class="section contact-section" id="contact">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Let's Connect</p>
+      <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+      <p class="section-desc">Ready to create something extraordinary? Let's discuss your next project.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <h3>Let's create something <span class="gold">beautiful</span> together.</h3>
+        <p>Whether it's a wedding, a corporate event, a brand campaign, or a creative project — we're ready to bring
+          your vision to life with unmatched quality and passion.</p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <label>Location</label>
+            <span>Sri Lanka</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📧</div>
+          <div class="contact-detail-text">
+            <label>Email</label>
+            <span>75nandun@gmail.com</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📱</div>
+          <div class="contact-detail-text">
+            <label>Phone</label>
+            <span>+94 77 126 621 3</span>
+          </div>
+        </div>
+      </div>
+      <!-- <form class="contact-form reveal-right" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Tell us about your project..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      </form> -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        Visual Edge by NOR
+        <span>&copy; 2026 All Rights Reserved</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#works">Works</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="YouTube">🎥</a>
+        <a href="#" aria-label="TikTok">🎵</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">›</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
